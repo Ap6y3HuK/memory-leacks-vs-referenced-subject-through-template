@@ -1,5 +1,13 @@
-<wd-target *ngIf=""></wd-target>
+<wd-target *ngIf="targetComponentToggler"></wd-target>
 
-<p>
-  Start editing to see some magic happen :)
-</p>
+<br><br>
+<button mat-raised-button (click)="toggleTargetComponent()"> Toggle target comp</button>
+
+<br><br>
+<button mat-raised-button (click)="subscribeForSubjectThroughTargetComponent()">Subscribe for Subject through TargetComponent</button>
+
+<br><br>
+<button mat-raised-button (click)="subscribeForTargetComponentSubject()">Subscribe for TargetComponent subject</button>
+
+<br><br>
+<button mat-raised-button (click)="subjectStorage.tickSubject()">Tick subject</button>
